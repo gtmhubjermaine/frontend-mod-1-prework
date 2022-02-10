@@ -15,6 +15,7 @@ If you've talked to any alum or near-alum of Turing, one thing they likely share
 One of those pieces is in how developers approach vocabulary. Knowing technical vocabulary will allow you to get more out of reading documentation and tutorials, and will allow you to communicate well with teams and ask good questions when you need help. Each section of your pre-work (and each lesson once you start Mod 1) will start with a vocabulary section. We don't always give you the definitions - this is intentional. You will create your own definition after having several opportunities to read definitions and see examples.
 
 Here's what we ask you do:
+
 - Find a special spot in your notebook for vocabulary and JavaScript reserved keywords. Mark it with a post-it or bookmark, so it's easy to find and come back to
 - When you start a new section of pre-work, write down each term. Leave plenty of space for (future) notes
 - As you read and work through the material you will come across definitions and build an understanding of these terms. Write in definitions, draw diagrams, write out relevant code snippets, etc. If you complete a section and don't have a grasp on a term, that's when it's time to reach out to your pre-work small group or cohort, and collaborate!
@@ -86,7 +87,7 @@ In the following section, you will get a little practice using `touch` and `mkdi
        |--secretLibrarian.js
        |--patron.js
        |--librarySystem.js
-```     
+```
 
 Don't worry about putting any text or content into these files. For now, create this structure with empty files.
 
@@ -102,15 +103,15 @@ Note that in the command provided above, the dashes preceding the directory name
 
 #### Commands
 
-* `rm`: This will remove a file from your system. Be careful with this! The terminal assumes you're a little more of an expert than the system does. This doesn't move the file to the Trash, it removes it completely from your system. It's a little like moving the file to the trash and then deleting it immediately.
+- `rm`: This will remove a file from your system. Be careful with this! The terminal assumes you're a little more of an expert than the system does. This doesn't move the file to the Trash, it removes it completely from your system. It's a little like moving the file to the trash and then deleting it immediately.
 
-* `rm -rf`: Adding the `-r` and `-f` flags to the `rm` command will allow you to delete directories even if they have other files and/or directories inside of them. For more information on each of these flags enter `man rm` into your terminal. It will print out the manual for this command.
+- `rm -rf`: Adding the `-r` and `-f` flags to the `rm` command will allow you to delete directories even if they have other files and/or directories inside of them. For more information on each of these flags enter `man rm` into your terminal. It will print out the manual for this command.
 
 #### Terminal Practice
 
 👩‍💻 Use `rm` and `rm -rf` to delete each of the files and directories you created in the `Making Things` section above.
 
-Note that it would be possible to delete the entire directory that you created with just `rm -rf secretLibraryProject`. **Don't do this!** At this point it's better for you to delete each of the files and directories individually so that you get some practice with these commands, which will help you remember them better in the long run. The goal here (for this particular exercise) isn't to be efficient and creating and deleting files and directories, it's to *get practice* creating and deleting files and directories. Ultimately this practice will allow you to be more efficient in the future.
+Note that it would be possible to delete the entire directory that you created with just `rm -rf secretLibraryProject`. **Don't do this!** At this point it's better for you to delete each of the files and directories individually so that you get some practice with these commands, which will help you remember them better in the long run. The goal here (for this particular exercise) isn't to be efficient and creating and deleting files and directories, it's to _get practice_ creating and deleting files and directories. Ultimately this practice will allow you to be more efficient in the future.
 
 ## Part C JavaScript Foundations
 
@@ -178,9 +179,7 @@ The **Number** data type handles all numbers, including negative numbers (such a
 _These are all examples of a `Number` data type in JavaScript:_
 
 ```javascript
-47
-
--3
+47 - 3
 
 16.25
 ```
@@ -194,7 +193,7 @@ _These are all examples of a `String` data type in JavaScript:_
 ```javascript
 "I am a string!"
 
-'I am also a string!'
+"I am also a string!"
 ```
 
 Strings can be used to work with any kind of text - number, letter, special character, etc.
@@ -241,7 +240,7 @@ In code, **variables** allow us to store a value and re-use that value in multip
 A variable declaration is made up of three parts: the variable keyword, the variable name, and the value to be assigned to the variable with the assignment operator. Let's see what that looks like in code:
 
 ```javascript
-var age = 8;
+var age = 8
 ```
 
 In the line above: `var` is the variable keyword, `age` is the variable name, and the number `8` is the value. A single equals sign (`=`) is the assignment operator. It assigns, or stores, the value to the variable name.
@@ -251,7 +250,7 @@ In JavaScript, there are certain words that are used for very specific tasks. Th
 Variables in JavaScript can be declared, or created, before they have a value assigned to them:
 
 ```javascript
-var pets;  // declare variable `pets`
+var pets // declare variable `pets`
 ```
 
 Declaring a variable means we now can reference it within our codebase, but without a value we can't do too much with it. Until you have assigned a value to a variable, programmers say the value is `undefined`. Fortunately, assigning a value is straightforward and can be done one of two ways:
@@ -259,26 +258,26 @@ Declaring a variable means we now can reference it within our codebase, but with
 You can declare a variable and assign a value at the same time:
 
 ```javascript
-var kids = 2;
+var kids = 2
 ```
 
 You can also re-assign a value to an existing variable:
 
 ```javascript
-kids = 3;  // change variable `kids`
+kids = 3 // change variable `kids`
 ```
 
 #### Rules for Naming Variables
 
 It is important to note that JavaScript has a particular set of conventions on what makes a valid variable name.
 
-* Names must begin with a letter, dollar sign, or an underscore
-* They cannot begin with a number
-* Names can contain any of the above characters plus a number, but you cannot use a dash (`-`) or a period (`.`) within the name
-* You cannot use keywords or reserved words (such as `var` or `for`)
-* All variables are case sensitive
-* Use names that describe the kind of information you plan to assign the variable
-* If your variable is made up of more than one word, then use [camelCase](https://en.wikipedia.org/wiki/Camel_case) for every word AFTER the first word, which should be lower case i.e., `thisIsMyVariableName`
+- Names must begin with a letter, dollar sign, or an underscore
+- They cannot begin with a number
+- Names can contain any of the above characters plus a number, but you cannot use a dash (`-`) or a period (`.`) within the name
+- You cannot use keywords or reserved words (such as `var` or `for`)
+- All variables are case sensitive
+- Use names that describe the kind of information you plan to assign the variable
+- If your variable is made up of more than one word, then use [camelCase](https://en.wikipedia.org/wiki/Camel_case) for every word AFTER the first word, which should be lower case i.e., `thisIsMyVariableName`
 
 > 👩‍💻 PAUSE here, and complete the exercises in `variables.js`
 
@@ -295,7 +294,6 @@ console.log("Hello, my name is " + name);
 
 In the example above, we joined together a string and a variable with a value of a string assigned to it in order to create a complete sentence. What do you think will happen if we join different data types? Let's try it with a number and a string.
 
-
 ```JavaScript
 var quantity = 12;
 var snacks = " doughnuts";
@@ -310,9 +308,11 @@ Let's take a look at why that resulted in a string. We have a variable called `s
 > 👩‍💻 PAUSE here, and complete the exercises in `concatenation.js`
 
 ### Interpolation
-In addition to concatenation, you may also have seen interpolation used to inject values into strings! One benefit of interpolation is that it can be easier to read in longer strings and don't require concatenating separate strings together. 
+
+In addition to concatenation, you may also have seen interpolation used to inject values into strings! One benefit of interpolation is that it can be easier to read in longer strings and don't require concatenating separate strings together.
 
 Interpolation requires slightly different syntax to inject values into a string. Follow the below formula to utilize interpolation:
+
 1. Use the backtick (same key as the `~`, or the key to the left of the `1` key on a mac) to wrap your entire string
 2. Any values that you want to add in, use the following syntax - `${variable_name}` to properly wrap these values
 
@@ -336,7 +336,6 @@ console.log(snackCountInterpolate);
 ```
 
 > 👩‍💻 PAUSE here, and complete the exercises in `interpolation.js`
-
 
 ## Exercises
 
