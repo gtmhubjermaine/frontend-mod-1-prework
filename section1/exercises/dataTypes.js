@@ -39,7 +39,7 @@ console.log(6 * 53)
 // YOU DO: log the result of 20 divided by 4 to console:
 
 // YOU DO: log the result of the modulo of 10 into 54:
-console.log()
+console.log(54 % 10)
 //-------------------
 // BOOLEANS
 //-------------------
@@ -51,10 +51,13 @@ console.log(1 === 2)
 console.log(7 > 2)
 
 // YOU DO: log to the console the result of "hello" is equal to "Hello":
+console.log("hello" === "Hello")
 
 // YOU DO: log to the console the result of 3 is not equal to 4:
+console.log(3 != 4)
 
 // YOU DO: log to the console the result of 4 is less than or equal to 5:
+console.log(4 <= 5)
 
 //-------------------
 // FINAL CHECK
